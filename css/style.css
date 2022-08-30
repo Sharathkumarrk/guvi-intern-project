@@ -1,0 +1,87 @@
+/* SET OUR WIDTH AND HIGHT TO 100% FOR HTML AND BODY */
+html,
+body {
+    width:100%;
+    height:100%;
+}
+
+/* SET BACKGROUND TO OUR IMAGE. */
+body {
+    background-image: url(../images/1567665.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+/* SET BACKGROUND TO OUR FORM WITH A DROP SHADOW AND SET OUR COLOR TO WHITE OUR BACKGROUND USES AN ALPHA CHANNEL HEX CODE TO GIVE US OPACITY.*/
+#form {
+    background:#18184c73; /* CAN ALSO USE RGBA. EXAMPLE: background: rgba(24, 24, 76, .45);*/
+    box-shadow:0px 5px 23px 0px #eae3e3;
+    color:#fff;
+   
+}
+
+#formContainer {
+    margin-top:100px;
+    text-align: center;
+}
+
+
+img {
+    width: 50%;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width:100%;
+    margin-bottom:50px;
+}
+
+input {
+    background:#fff !important;
+    border:none !important;
+    border-radius:5px;
+    color:#fff;
+}
+
+input[name^="register"]::placeholder { /* Selects placeholders of inputs with the name attribute that begins with 'register'. */
+    color:#fff;
+    opacity:0.6;
+}
+
+
+#loginBtnContainer, /* This is the div element that holds our button to toggle forms */
+#registerForm { /* This is our Registration form. It needs to be hidden by default */
+    display:none;
+}
+
+.hide {
+    display:none !important;
+}
+
+.show {
+    display:block !important;
+}
+@media only screen and (max-width:575px) {
+    #form {
+        margin:0 15px; /* Gives us some left and right margin on smaller screens */
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #form {
+        margin-left:100px auto; /* Set our margin on top and bottom to 100px and set our margin left and right to auto; */
+    }
+}
+
+i{
+    color: WHITE;
+    cursor: pointer;
+}
+  
+label {
+    color: white;
+  }
+  
+
